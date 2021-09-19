@@ -4,13 +4,16 @@ import { NavLink } from 'react-router-dom';
 
 const useStyle = makeStyles({
     header:{
-        backgroundColor:"black"
+        background:'none',
+        
     },
+   
     navlink:{
-        color:"white",
+        color:"black",
         textDecoration:"none",
         marginRight:20,
-        fontSize:15,
+        fontSize:20,
+        fontWeight:"bold",
         justifyContent:"flex-end"
         
     },
@@ -27,10 +30,12 @@ const useStyle = makeStyles({
     list:{
         fontSize:37,
         height:0,
-        marginTop:10,
+        marginTop:0,
         marginLeft:20,
         textDecoration:"none",
-        color:"orange"
+        color:"orange",
+        fontWeight:"bold",
+        display:"block",
 
     }
 })
@@ -38,7 +43,7 @@ const NavBar = () => {
     const classes = useStyle();
     return (
         <div>
-            <AppBar className={classes.header} position="static">
+            <AppBar className={classes.header} elevation={24}>
             <NavLink className={classes.list} to="/" exact>List</NavLink>
                 <Toolbar className={classes.toolbar}>
                     

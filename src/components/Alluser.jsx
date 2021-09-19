@@ -46,7 +46,7 @@ const Alluser = () => {
     }
     return (
         <div>
-            <h1 style={{display:'flex' , justifyContent:"center"}}>List User</h1>
+            <h1 style={{display:'flex' , justifyContent:"center", marginTop:100}}>List User</h1>
             <Table className={classes.table}>
                 <TableHead>
                     <TableRow className={classes.thead}>

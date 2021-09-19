@@ -1,13 +1,6 @@
 {
   "user": [
     {
-      "name": "John Cena",
-      "username": "wrestler",
-      "email": "Johncena123@gmail.com",
-      "phone": "8596742314",
-      "id": 1
-    },
-    {
       "name": "piyush",
       "username": "piyush sukhadiya",
       "email": "piyush@gmail.com",
@@ -20,6 +13,13 @@
       "email": "Raj@gmail.com",
       "phone": "9845681123",
       "id": 3
+    },
+    {
+      "name": "dkk",
+      "username": "Darshak",
+      "email": "Dk@123",
+      "phone": "9856312560",
+      "id": 4
     }
   ]
 }

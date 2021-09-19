@@ -2,12 +2,15 @@ import React,{useState} from 'react'
 import { FormControl, FormGroup, InputLabel , Input, Button, makeStyles, Typography} from '@material-ui/core';
 import { addUser } from '../Services/api';
 import { useHistory } from 'react-router';
+import * as Yup from 'yup';
 const intialValue = {
     name: '',
     username: '',
     email: '',
     phone: '',
 }
+
+
 const Adduser = () => {
     const useStyle = makeStyles({
         container:{
@@ -15,7 +18,8 @@ const Adduser = () => {
             margin:'3% 0 0 30%',
             '& > *' : {
                 marginTop:12,
-            }
+            },
+            marginTop:80,
 
         },
         button:{
@@ -45,9 +49,13 @@ const Adduser = () => {
     return (
         
         <div>
-            <h1 style={{display:'flex' , justifyContent:"center"}}>Add component</h1>
+        
+       <div><h1 style={{display:'flex' , justifyContent:"center",marginTop:100}}>Add component</h1></div>
+            
+            
             <FormGroup className={classes.container}>
-            <Typography variant="h4">Add User</Typography>
+            
+            <Typography variant="h4" >Add User</Typography>
                 <FormControl>
                     <InputLabel>Name</InputLabel>
                     <Input onChange={(e)=>onValueChange(e)}
@@ -83,6 +91,8 @@ const Adduser = () => {
                <Button variant="contained" color="secondary" onClick={()=>{addUserDetail()}} className={classes.button}>Add User</Button>
             </FormGroup>
         </div>
+        
+        
     )
 }
 

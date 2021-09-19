@@ -58,7 +58,7 @@ const EditUser = () => {
         <div>
             
             <FormGroup className={classes.container}>
-            <Typography variant="h4">Edit User</Typography>
+            <Typography variant="h4" style={{marginTop:100}}>Edit User</Typography>
                 <FormControl>
                     <InputLabel>Name</InputLabel>
                     <Input onChange={(e)=>onValueChange(e)}
